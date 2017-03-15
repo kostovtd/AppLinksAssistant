@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/default_vertical_padding"
+    android:paddingStart="@dimen/default_horizontal_padding"
+    android:paddingEnd="@dimen/default_horizontal_padding">
+
+    <!-- PRODUCT NAME LABEL-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold"
+        android:text="@string/product_name_label"/>
+
+
+    <!-- PRODUCT NAME VALUE -->
+    <TextView
+        android:id="@+id/text_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_vertical_margin"/>
+
+
+    <!-- PRODUCT DESCRIPTION LABEL -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_vertical_margin"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold"
+        android:text="@string/product_description_label"/>
+
+
+    <TextView
+        android:id="@+id/text_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_vertical_margin"/>
+
+
+    <!-- STOCK QUANTITY LABEL -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_vertical_margin"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold"
+        android:text="@string/product_stock_quantity_label"/>
+
+    <TextView
+        android:id="@+id/text_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_vertical_margin"/>
+
+
+
+    <!-- PRICE LABEL -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_vertical_margin"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold"
+        android:text="@string/product_price_label"/>
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_vertical_margin"/>
+
+</LinearLayout>

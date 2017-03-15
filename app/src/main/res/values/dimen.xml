@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TEXT SIZE -->
+    <dimen name="large_text_size">22sp</dimen>
+
+
+    <!-- MARGIN -->
+    <dimen name="default_vertical_margin">8dp</dimen>
+    <dimen name="large_vertical_margin">16dp</dimen>
+
+
+    <!-- PADDING -->
+    <dimen name="default_vertical_padding">8dp</dimen>
+    <dimen name="default_horizontal_padding">8dp</dimen>
+</resources>

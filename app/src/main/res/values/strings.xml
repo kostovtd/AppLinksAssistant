@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AppLinksAssistant</string>
+
+    <string name="product_name_label">Product name:</string>
+    <string name="product_description_label">Product description:</string>
+    <string name="product_stock_quantity_label">Stock quantity:</string>
+    <string name="product_price_label">Price:</string>
 </resources>
