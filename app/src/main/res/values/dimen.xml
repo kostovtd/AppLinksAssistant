@@ -6,6 +6,7 @@
 
 
     <!-- MARGIN -->
+    <dimen name="small_vertical_margin">4dp</dimen>
     <dimen name="default_vertical_margin">8dp</dimen>
     <dimen name="large_vertical_margin">16dp</dimen>
 

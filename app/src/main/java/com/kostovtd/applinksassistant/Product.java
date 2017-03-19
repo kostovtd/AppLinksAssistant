@@ -1,15 +1,22 @@
 package com.kostovtd.applinksassistant;
 
 
+import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
-public class Product {
+public class Product extends RealmObject {
 
+    @PrimaryKey
     private int id;
     private String name;
     private String description;
     private int stockQuantity;
     private double price;
 
+
+    public Product() {
+
+    }
 
     public Product(int id, String name, String description,
                    int stockQuantity, double price) {
