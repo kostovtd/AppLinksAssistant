@@ -5,4 +5,5 @@
     <string name="product_description_label">Product description:</string>
     <string name="product_stock_quantity_label">Stock quantity:</string>
     <string name="product_price_label">Price:</string>
+    <string name="asset_statements" translatable="false">[{\n  \"relation\": [\"delegate_permission/common.handle_all_urls\"],\n  \"target\": {\n    \"namespace\": \"web\",\n    \"site\": \"https://todorbg.github.io\",\n  }\n}]</string>
 </resources>

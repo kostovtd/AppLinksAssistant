@@ -1,6 +1,8 @@
 package com.kostovtd.applinksassistant;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -31,15 +33,28 @@ public class ProductDetailsActivity extends AppCompatActivity {
         textProductQuantity = (TextView) findViewById(R.id.text_quantity);
         textProductPrice = (TextView) findViewById(R.id.text_price);
 
-
-        if(getIntent().getExtras() != null) {
-            if(getIntent().getExtras().containsKey("selected_product_id")) {
-                int selectedProductId = getIntent().getExtras().getInt("selected_product_id");
-                Product product = findProductById(selectedProductId);
-                showProductData(product);
-            }
-        }
+        handleIntent(getIntent());
     }
+
+
+    private void handleIntent(Intent intent) {
+        String appLinkAction = intent.getAction();
+        Uri appLinkData = intent.getData();
+        int productId;
+
+        if (Intent.ACTION_VIEW.equals(appLinkAction) && appLinkData != null){
+            String productIdStr = appLinkData.getLastPathSegment();
+            productId = Integer.getInteger(productIdStr);
+        } else if(getIntent().getExtras() != null) {
+            productId = getIntent().getExtras().getInt("selected_product_id");
+        } else {
+            productId = 0;
+        }
+
+        Product product = findProductById(productId);
+        showProductData(product);
+    }
+
 
 
     /**
