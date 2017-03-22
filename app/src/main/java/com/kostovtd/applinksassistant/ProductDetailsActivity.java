@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.TextView;
 
 import io.realm.Realm;
@@ -27,6 +28,8 @@ public class ProductDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_details);
 
+        Realm.init(ProductDetailsActivity.this);
+
         // INITIALIZE VIEWS
         textProductName = (TextView) findViewById(R.id.text_product_name);
         textProductDescription = (TextView) findViewById(R.id.text_product_description);
@@ -44,7 +47,8 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
         if (Intent.ACTION_VIEW.equals(appLinkAction) && appLinkData != null){
             String productIdStr = appLinkData.getLastPathSegment();
-            productId = Integer.getInteger(productIdStr);
+            Log.d(TAG, "productStr: " + productIdStr);
+            productId = Integer.parseInt(productIdStr);
         } else if(getIntent().getExtras() != null) {
             productId = getIntent().getExtras().getInt("selected_product_id");
         } else {

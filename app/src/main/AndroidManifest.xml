@@ -32,7 +32,7 @@
                 <data
                     android:scheme="https"
                     android:host="todorbg.github.io"
-                    android:path="/product" />
+                    android:pathPrefix="/product" />
             </intent-filter>
         </activity>
 
