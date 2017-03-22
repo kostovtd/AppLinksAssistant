@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.kostovtd.applinksassistant",
+    "sha256_cert_fingerprints":
+    ["0C:ED:09:58:D6:20:1F:8E:DF:A7:06:B1:FB:77:C9:4F:6F:0A:9F:EF:11:80:4F:5D:7C:59:3D:E0:B5:52:6A:03"]
+  }
+}]
